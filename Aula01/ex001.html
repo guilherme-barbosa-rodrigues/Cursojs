@@ -7,20 +7,55 @@
     <title>Java Script</title>
     <style>
         body {
-            background-color: rgb(105, 105, 173);
+            background-color: rgb(92, 92, 179);
             color: white;
             font: normal 20pt arial;
         }
+        h1 {
+            text-align: center;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.486);
+        }
+        div#area {
+            background-color: green;
+            border-radius: 15px;
+            width: 200px;
+            height: 150px;
+            line-height: 150px;
+            text-align: center;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.600);
+        }
     </style>
 </head>
-<body>
-    <h1>Olá, mundo!</h1>
-    <p>Começando a estudar JavaScript</p>
+<body></body>
+    <main>
+        <h1>Olá, mundo!</h1>
+        <p>Começando a estudar JavaScript</p>
+    </main>
+    <div id="area">
+        Interaja...
+    </div>
     <script>
+        var a = window.document.getElementById('area')
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
+        function clicar() {
+            a.innerText = 'Clicou'
+            a.style.background = 'red'
+        }
+        function entrar () {
+            a.innerText = 'Entrou'
+        }
+        function sair() {
+            a.innerText = 'Saiu'
+            a.style.background = 'green'
+        }
+    </script>
+    <!--<script>
       // alert('Minha primeira mensagem')
       // window.confirm('Ola?')
-      var nome = window.prompt('Qual seu nome?')
-      window.alert ('É um prezer lhe conhecer '+nome)
-    </script>
+      // var nome = window.prompt('Qual seu nome?')
+      // window.alert ('É um prezer lhe conhecer '+nome)
+    </script> -->
 </body>
 </html>
