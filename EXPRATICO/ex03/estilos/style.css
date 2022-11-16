@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+@media screen and (max-width:760px){
+    section {
+        max-width: 400px;
+
+    }
+    
+}
+body {
+    background-color: rgb(70, 107, 241);
+    font: normal 15pt Arial;
+}
+header {
+    color: white;
+    text-align: center;
+}
+section {
+    background-color: white;
+    border-radius: 15px;
+    padding: 15px;
+    width: 650px;
+    margin: auto;
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.486);
+
+    transition: width .3s;
+    transition-timing-function: ease ;
+}
+footer {
+    color: white;
+    text-align: center;
+    font-style: italic;
+
+}
