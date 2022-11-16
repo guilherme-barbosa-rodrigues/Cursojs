@@ -26,6 +26,11 @@ section {
     transition: width .3s;
     transition-timing-function: ease ;
 }
+#foto {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+}
 footer {
     color: white;
     text-align: center;
