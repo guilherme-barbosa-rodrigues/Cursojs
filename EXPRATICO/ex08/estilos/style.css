@@ -26,9 +26,29 @@ section {
     transition: width .3s;
     transition-timing-function: ease ;
 }
+div#gm1 > iframe{
+    margin: 20px;
+}
+div#gm2 > iframe{
+    margin: 20px;
+    margin-left: 55px;
+}
 footer {
     color: white;
     text-align: center;
     font-style: italic;
+    margin-top: 12px;
 
+}
+footer > a {
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    transition: 1s;
+}
+footer a:hover {
+    color: blueviolet;
+    background-color: burlywood;
+    border-radius: 10px;
+    transition: 0.3s;
 }
